@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日めくりカレンダー</title>
+  <title>日めくりカウントダウン</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="calendar">
 
-    <p id="month"></p>
+    <p id="today"></p>
 
-    <h1 id="date"></h1>
+    <div class="days-area">
+      <h1 id="days">0</h1>
+      <p>DAYS</p>
+    </div>
 
-    <p id="day"></p>
+    <p id="event-name">イベント名</p>
+    <p id="event-date">2026-01-01</p>
 
-    <p id="countdown"></p>
+  </div>
+
+
+  <div class="input-area">
+
+    <input
+      type="text"
+      id="name-input"
+      placeholder="イベント名"
+    >
+
+    <input
+      type="date"
+      id="date-input"
+    >
+
+    <button id="set-btn">
+      設定
+    </button>
 
   </div>
 
   <script src="script.js"></script>
 
 </body>
+
 </html>

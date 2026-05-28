@@ -1,26 +1,48 @@
-// 今日の日付
+// 日付
 const today = new Date();
 
-// 年・月・日
-const year = today.getFullYear();
-const month = today.getMonth()+ 1;
-const date = today.getDate();
-const day = today.getDay();
+const todayEl = document.getElementById("today");
+const daysEl = document.getElementById("days");
 
-// 曜日
-const week = ["日","月","火","水","木","金","土"];
+const eventNameEl =
+  document.getElementById("event-name");
 
-// HTML要素
-const monthEl = document.getElementById("month");
-const dateEl = document.getElementById("date");
-const dayEl = document.getElementById("day");
+const eventDateEl =
+  document.getElementById("event-date");
 
-monthEl.textContent =`${month}月`;
-dateEl.textContent = date;
-dayEl.textContent =`${week[day]}曜日`;
+const nameInput =
+  document.getElementById("name-input");
 
-dateEl.addEventListener("click", ()=>{
-  dateEl.classList.remove("flip");
-  void dateEl.offsetWidth;
-  dateEl.classList.add("flip");
+const dateInput =
+  document.getElementById("date-input");
+
+const button =
+  document.getElementById("set-btn");
+
+todayEl.textContent =
+  today.toLocaleDateString();
+
+button.addEventListener("click", ()=> {
+
+  // 入力値
+  const eventName = nameInput.value;
+
+  const targetDate =
+    new Date(dateInput.value);
+
+  const diffTime =
+    targetDate - new Date();
+
+  const diffDays =
+    Math.ceil(
+      diffTime / (1000 * 60 * 60 * 24)
+    );
+
+  daysEl.textContent = diffDays;
+
+  eventNameEl.textContent = eventName;
+
+  eventDateEl.textContent =
+    dateInput.value;
+
 });
