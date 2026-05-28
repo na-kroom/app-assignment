@@ -1,15 +1,16 @@
-# Daily Flip Calendar
+# Daily Countdown Calendar
 
 ## Overview
-This is a simple daily flip calendar web application created as a school assignment.
+This is a daily flip calendar web application created as a school assignment.
 
-Users can view the current date in a flip-style design similar to a traditional Japanese "himekuri" calendar.
+The application displays the current date and shows a countdown to a specific event or deadline.
 
 ## Features
 - Display the current date
-- Flip-style calendar design
-- Automatic daily update
-- Simple and clean UI
+- Countdown to an event
+- Flip-style daily calendar design
+- Automatic date update
+- Simple and easy-to-read UI
 
 ## Technologies Used
 - HTML
@@ -19,15 +20,17 @@ Users can view the current date in a flip-style design similar to a traditional 
 ## How to Use
 1. Open the web page in your browser.
 2. The current date will be displayed automatically.
-3. The calendar updates every day.
+3. The remaining days until the event will also be shown.
 
 ## What I Learned
 Through this project, I learned:
-- How to manipulate the DOM using JavaScript
-- How to use event handling
-- How to design a simple user interface with CSS
+- How to manipulate dates using JavaScript
+- How to update elements dynamically with the DOM
+- How to build a simple and user-friendly UI with CSS
 
 ## Future Improvements
-- Add animations for page flipping
-- Support dark mode
-- Make the design responsive for smartphones
+- Add animation effects
+- Allow users to set their own events
+- Support smartphone screens
+- Add dark mode
+
