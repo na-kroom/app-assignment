@@ -1,0 +1,50 @@
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f5f5f5;
+  font-family:sans-serif;
+}
+
+.calendar{
+  width:220px;
+  background:white;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 0 15px rgba(0,0,0,0.1);
+  padding:20px;
+}
+
+#month{
+  font-size:24px;
+  color:#666;
+}
+
+#date{
+  font-size:80px;
+  margin:10px 0;
+  cursor:pointer;
+}
+
+#day{
+  font-size:20px;
+}
+
+.flip{
+  animation:flip 0.5s;
+}
+
+@keyframes flip{
+  0%{
+    transform:rotateX(0);
+  }
+
+  50%{
+    transform:rotateX(90deg);
+  }
+
+  100%{
+    transform:rotateX(0);
+  }
+}
