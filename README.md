@@ -23,7 +23,6 @@ The application displays the current date and shows a countdown to a specific ev
 3. The remaining days until the event will also be shown.
 
 ## What I Learned
-Through this project, I learned:
 - How to manipulate dates using JavaScript
 - How to update elements dynamically with the DOM
 - How to build a simple and user-friendly UI with CSS
