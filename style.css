@@ -9,7 +9,7 @@ body{
   justify-content:center;
   align-items:center;
 
-  background:#62c4d3;
+  background:#7eeeff;
 
   font-family:sans-serif;
 
@@ -30,7 +30,7 @@ body{
 #today{
   text-align:center ;
   color:#000000;
-  font-size:14px;
+  font-size:20px;
 }
 
 .days-area{
@@ -38,7 +38,7 @@ body{
 }
 
 #days{
-  font-size:90px;
+  font-size:120px;
   margin:0;
 }
 
